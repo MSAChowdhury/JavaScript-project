@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy Course</title>
+        <script type="text/javascript">
+
+        function cyears (form)
+        {
+            form.marsage.value = form.myage.value * 1.83
+            
+        }
+
+        </script>
+</head>
+<body>
+    <b>
+        Find out your age in MARS
+    </b>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    Enter your age: 
+                </td>
+                <td>
+                    <input type="text" name="myage" size="15">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Calculate" onclick="cyears(this.form)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Your age in Mars: 
+                </td>
+                <td>
+                    <input type="text" name="marsage" size="15">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p id="math">
+        <script type="text/javascript">
+            document.getElementById("math").innerHTML = 12 +3
+            </script>
+    </p>
+    <p id="car">
+        <script type="text/javascript">
+        var car = {type:"Restomod",model:"Chevrolet 1971",color:"Red"};
+            document.getElementById("car").innerHTML = car.type + " " + car.model; 
+            
+            </script>
+    </p>
+    <p id="demo">
+        <script type="text/javascript">
+        var car = ["Restomod","Chevrolet 1971","Red"];
+            document.getElementById("car").innerHTML = car.join(" - "); 
+            
+            </script>
+    </p>
+    
+</body>
+</html>
